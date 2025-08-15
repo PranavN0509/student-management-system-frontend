@@ -11,7 +11,7 @@ const StudentList = () => {
         const getAllStudents = async (req, res) => {
             try {
                 // Fetch from API
-                const response = await fetch("http://localhost:3000/students/get-students");
+                const response = await fetch("https://student-management-system-backend-black.vercel.app/students/get-students");
                 const data = await response.json();
                 // console.log(data)
                 setStudents(data);

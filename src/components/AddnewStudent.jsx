@@ -44,7 +44,7 @@ const AddnewStudent = () => {
       }
     }
     try {
-      const response = await fetch("http://localhost:3000/students/add-student", {
+      const response = await fetch("https://student-management-system-backend-black.vercel.app/students/add-student", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

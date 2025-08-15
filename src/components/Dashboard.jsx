@@ -6,7 +6,7 @@ const Dashboard = () => {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        fetch("http://localhost:3000/dashboard/stats")
+        fetch("https://student-management-system-backend-black.vercel.app/dashboard/stats")
             .then(res => res.json())
             .then(data => {
                 setStats(data);
